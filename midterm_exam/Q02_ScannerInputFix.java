@@ -3,21 +3,21 @@ import java.util.Scanner;
 public class Q02_ScannerInputFix {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter quantity: ");
+        System.out.print("請輸入數量：");
         int quantity = sc.nextInt();
         sc.nextLine();
-        System.out.print("Enter course name: ");
+        System.out.print("請輸入課程名稱：");
         String courseName = sc.nextLine();
-        System.out.print("Enter price: ");
+        System.out.print("請輸入單價：");
         int price = sc.nextInt();
         sc.nextLine();
-        System.out.print("Enter note: ");
+        System.out.print("請輸入備註：");
         String note = sc.nextLine();
-        System.out.println("=== Order Summary ===");
-        System.out.println("Course: " + courseName);
-        System.out.println("Quantity: " + quantity);
-        System.out.println("Total: " + quantity * price);
-        System.out.println("Note: " + note);
+        System.out.println("=== 登記結果 ===");
+        System.out.println("課程：" + courseName);
+        System.out.println("數量：" + quantity);
+        System.out.println("總額：" + quantity * price);
+        System.out.println("備註：" + note);
         sc.close();
     }
 }

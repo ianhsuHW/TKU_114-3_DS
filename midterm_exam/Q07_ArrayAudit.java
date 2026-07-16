@@ -5,10 +5,12 @@ public class Q07_ArrayAudit {
 
     public static void main(String[] args) {
         int[] readings = {12, 71, 35, -4, 35, 22, 60, 9, 48, 61};
-        System.out.println("Valid count: " + countValid(readings));
-        System.out.printf("Valid average: %.2f%n", averageValid(readings));
-        System.out.println("Last index at least 35: " + findLastAtLeast(readings, 35));
+        System.out.println("有效筆數：" + countValid(readings));
+        System.out.printf("有效平均：%.2f%n", averageValid(readings));
+        System.out.println("最後符合門檻的索引：" + findLastAtLeast(readings, 35));
+        System.out.print("清理後資料：");
         printArray(createCleanCopy(readings));
+        System.out.print("原始資料：");
         printArray(readings);
     }
 
@@ -24,7 +26,7 @@ public class Q07_ArrayAudit {
         return count == 0 ? -1.0 : (double) sum / count;
     }
     public static int findLastAtLeast(int[] data, int target) {
-        for (int i = data.length - 1; i >= 0; i--) if (data[i] >= target) return i;
+        for (int i = data.length - 1; i >= 0; i--) if (isValid(data[i]) && data[i] >= target) return i;
         return -1;
     }
     public static int[] createCleanCopy(int[] data) {

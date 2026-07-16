@@ -28,8 +28,8 @@ public class Q11_LabDevice {
         Q11_LabDevice device = new Q11_LabDevice(" D01 ", " Printer ", 90, true);
         device.addUsageHours(30); device.addUsageHours(-5); device.setName(" 3D Printer ");
         System.out.println(device);
-        System.out.println("Needs maintenance: " + device.needsMaintenance());
+        System.out.println("需要保養：" + device.needsMaintenance());
         device.deactivate();
-        System.out.println("Active: " + device.isActive());
+        System.out.println("啟用狀態：" + device.isActive());
     }
 }

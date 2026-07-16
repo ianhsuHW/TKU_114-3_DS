@@ -2,9 +2,11 @@ public class Q08_ArrayRemove {
     public static void main(String[] args) {
         int[] values = {4, 7, 2, 7, 9, 7, 1};
         int target = 7;
-        System.out.println("Count: " + countOccurrences(values, target));
-        System.out.println("Last index: " + findLastIndex(values, target));
+        System.out.println("出現次數：" + countOccurrences(values, target));
+        System.out.println("最後索引：" + findLastIndex(values, target));
+        System.out.print("移除後：");
         printArray(removeAll(values, target));
+        System.out.print("原始陣列：");
         printArray(values);
     }
     public static int countOccurrences(int[] data, int target) {

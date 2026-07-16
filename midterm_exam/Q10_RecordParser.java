@@ -2,8 +2,8 @@ public class Q10_RecordParser {
     public static void main(String[] args) {
         String[] records = {"A101|Keyboard|3|850", "A102|Mouse|-1|500", "broken data", "A103|Monitor|2|4200", "A104||1|300"};
         for (String record : records) System.out.println(record + " -> " + calculateRecordTotal(record));
-        System.out.println("Valid records: " + countValidRecords(records));
-        System.out.println("Grand total: " + calculateGrandTotal(records));
+        System.out.println("合法筆數：" + countValidRecords(records));
+        System.out.println("總金額：" + calculateGrandTotal(records));
     }
     public static boolean isValidRecord(String record) {
         if (record == null) return false;

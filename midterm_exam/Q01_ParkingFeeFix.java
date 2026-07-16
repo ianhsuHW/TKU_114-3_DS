@@ -2,7 +2,7 @@ public class Q01_ParkingFeeFix {
     public static void main(String[] args) {
         int[] testMinutes = {-20, 30, 31, 60, 61, 120, 121, 420};
         for (int minutes : testMinutes) {
-            System.out.println("Parking " + minutes + " minutes: " + calculateFee(minutes));
+            System.out.println("停車 " + minutes + " 分鐘，費用：" + calculateFee(minutes) + " 元");
         }
     }
 

@@ -1,10 +1,10 @@
 public class Q12_BookingReport {
     public static void main(String[] args) {
         Q12_Booking[] bookings = {new Q12_Booking("B001", "Amy", 2, 750, true), new Q12_Booking("B002", "Ben", 4, 600, false), new Q12_Booking("B003", "Cara", 3, 900, true), new Q12_Booking("B004", "Dan", 1, 1200, true)};
-        System.out.println("Confirmed bookings: " + countConfirmed(bookings));
-        System.out.println("Confirmed revenue: " + calculateConfirmedRevenue(bookings));
-        System.out.println("Found: " + findById(bookings, "b003"));
-        System.out.println("Largest confirmed: " + findLargestConfirmed(bookings));
+        System.out.println("已確認筆數：" + countConfirmed(bookings));
+        System.out.println("已確認收入：" + calculateConfirmedRevenue(bookings));
+        System.out.println("搜尋結果：" + findById(bookings, "b003"));
+        System.out.println("最高確認預約：" + findLargestConfirmed(bookings));
     }
     public static int countConfirmed(Q12_Booking[] bookings) {
         if (bookings == null) return 0;
