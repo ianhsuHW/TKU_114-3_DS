@@ -2,13 +2,21 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Compile Java to bin",
+      "label": "Compile all Java to bin",
       "type": "shell",
       "command": "javac",
       "args": [
         "-d",
         "bin",
-        "0702/*.java"
+        "0702/*.java",
+        "0707/*.java",
+        "0708/*.java",
+        "0709/*.java",
+        "0714/*.java",
+        "0715/*.java",
+        "0716/*.java",
+        "week1_practice/*.java",
+        "midterm_exam/*.java"
       ],
       "group": {
         "kind": "build",

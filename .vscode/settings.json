@@ -1,11 +1,16 @@
 {
   "java.project.sourcePaths": [
-    "0709",
-    "0708",
-    "0707",
     "0702",
-    "week1_practice"
+    "0707",
+    "0708",
+    "0709",
+    "0714",
+    "0715",
+    "0716",
+    "week1_practice",
+    "midterm_exam"
   ],
 
-  "java.project.outputPath": "bin"
+  "java.project.outputPath": "bin",
+  "java.configuration.updateBuildConfiguration": "automatic"
 }
