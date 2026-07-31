@@ -152,6 +152,20 @@ public class EventRegistrationSystem {
         return RegistrationAlgorithms.findByName(allRegistrations, name);
     }
 
+    public boolean isConfirmed(String id) {
+        if (id == null) {
+            return false;
+        }
+
+        String target = id.trim();
+        for (Registration registration : confirmed) {
+            if (registration.getId().equalsIgnoreCase(target)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public Registration findById(String id) {
         if (id == null) {
             return null;
